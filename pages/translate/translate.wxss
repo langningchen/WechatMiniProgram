@@ -1,0 +1,28 @@
+/**index.wxss**/
+button {
+	position: relative;
+	margin-top: 10px;
+}
+.weui-input {
+	position: relative;
+	margin-top: 10px;
+	margin-left: 20px;
+}
+#buttons {
+	position: relative;
+	margin-top: 30px;
+}
+#info {
+	position: relative;
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: x-small;
+	color: gray;
+}
+#ZiDongFuZhiMiWen {
+	position: relative;
+	margin-top: 20px;
+	margin-left: 20px;
+	font-size: small;
+}

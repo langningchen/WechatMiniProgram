@@ -1,0 +1,24 @@
+<view class="container">
+  <form>
+    <textarea class="weui-input" maxlength="-1" confirm-type="done" id="YaunWen" placeholder="请输入原文" auto-height="true" bindinput="YuanWenGaiBian" value="{{YuanWenOutput}}" />
+    <view id="passwords">
+      <input type="number" confirm-type="done" id="MiMa" password="{{Toukan ? false : true}}" placeholder="请输入密码（非必填）" maxlength="4" bindinput="MiMaChange" value="{{MiMaOutput}}" />
+      <image id="see" src="{{Toukan ? \"../../resource/eye.png\" : \"../../resource/close.png\"}}" mode="aspectFit" bindtouchstart="ChaKanMiMa" bindtouchend="QuXiaoChaKan"></image>
+    </view>
+    <textarea class="weui-input" maxlength="-1" confirm-type="done" id="MiWen" placeholder="请输入密文" auto-height="true" bindinput="MiWenGaiBian" value="{{MiWenOutput}}" />
+    <view id="buttons">
+      <button id="JiaMi" type="primary" bindtouchend="Encode">加密</button>
+      <button id="JieMi" type="primary" bindtouchend="Decode">解密</button>
+      <button id="FuZhiYuanWen" type="default" bindtouchend="CopyYuanWen">复制原文</button>
+      <button id="FuZhiMiWen" type="default" bindtouchend="CopyMiWen">复制密文</button>
+    </view>
+    <checkbox id="ZiDongFuZhiMiWen" checked="{{FuZhiMiWenOutput ? true : false}}" bindtap="GaiBianZhuangTai">加密完自动复制密文</checkbox>
+    <checkbox id="FuZhiMiMa" checked="{{FuZhiMiMaOutput ? true : false}}" bindtap="GaiBianFuZhiMiMa">复制密文时自动复制密码</checkbox>
+  </form>
+  <text id="info">提示：
+  本程序不会上传任何原文和密码，所有操作均在本地执行！所以请放心使用！
+  加密方法：输入原文和点击加密
+  解密方法：输入密码和密文点击解密
+  长按眼睛可以查看密码
+  密码非必填</text>
+</view>

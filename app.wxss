@@ -1,0 +1,38 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+#DaoHangLan {
+	flex-direction: row;
+	display: flex;
+	position: fixed;
+	bottom: 0px;
+	background-color: white;
+	border-top-color: grey;
+	border-top-width: 2px;
+	border-top-style: solid;
+	width: 100%;
+}
+.XuanXiang {
+	position: relative;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	float: left;
+	width: 50%;
+}
+.XuanXiangTuPian {
+	display: block;
+	margin: auto;
+	width: 30px; 
+	height: 30px;
+}
+.XuanXiangWenZi {
+	display: block;
+	margin: auto;
+	text-align: center;
+	font-size: xx-small;
+}

@@ -1,0 +1,34 @@
+{
+    "pages": [
+        "pages/ordinary/ordinary",
+        "pages/translate/translate",
+        "pages/me/me"
+    ],
+    "tabBar": {
+        "list": [{
+            "pagePath": "pages/ordinary/ordinary",
+            "text": "普通加密",
+            "iconPath": "resource/ordinary.png",
+            "selectedIconPath": "resource/ordinary.png"
+        },{
+            "pagePath": "pages/translate/translate",
+            "text": "翻译加密",
+            "iconPath": "resource/translate.png",
+            "selectedIconPath": "resource/translate.png"
+        },{
+            "pagePath": "pages/me/me",
+            "text": "我",
+            "iconPath": "resource/me.png",
+            "selectedIconPath": "resource/me.png"
+        }]
+    },
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "聊天加密",
+        "navigationBarTextStyle": "black"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json",
+    "lazyCodeLoading": "requiredComponents"
+}

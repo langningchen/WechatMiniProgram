@@ -1,0 +1,16 @@
+<view class="container">
+  <form>
+    <textarea class="weui-input" maxlength="-1" confirm-type="done" id="YaunWen" placeholder="请输入原文" auto-height="true" bindinput="YuanWenGaiBian" value="{{YuanWenOutput}}" />
+    <textarea class="weui-input" maxlength="-1" confirm-type="done" id="MiWen" placeholder="密文" auto-height="true" disabled="true" value="{{MiWenOutput}}" />
+    <view id="buttons">
+      <button id="JiaMi" type="primary" bindtouchend="Encode">加密</button>
+      <button id="FuZhiMiWen" type="default" bindtouchend="CopyMiWen">复制密文</button>
+    </view>
+    <checkbox id="ZiDongFuZhiMiWen" checked="{{FuZhiMiWenOutput ? true : false}}" bindtap="GaiBianFuZhiMiWen">加密完自动复制密文</checkbox>
+    </form>
+  <text id="info">提示：
+  本程序不会上传任何原文，所有操作均在本地执行！所以请放心使用！
+  加密方法：输入原文和点击加密
+  解密方法：长按聊天记录，点击翻译，如果感觉不正确，再长按原文，点击重译
+  </text>
+</view>
